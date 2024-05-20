@@ -1,0 +1,721 @@
+:root {
+    --primary-color: #047aed;
+    --Deep-blue: #023567;
+    --Another-blue-color: #002240;
+    --text-color: #333;
+    --my-white: #f3f3f3;
+    --peachstacks: #e0144c;
+    --button-color:#e5e5e5;
+    --cream-white: #fffcf3;
+    --light-blue: #F1F8FF;    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color)
+}
+
+.logo{
+    font-weight:900;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+/* Conatiner */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0px 40px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--primary-color);
+    color: #fefefe;
+    height: 100px;
+    align-content: center;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: #fefefe;  
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px solid var(--my-white);
+}  
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Showcase Section */
+
+.showcase{
+    height: 700px;
+    background-color: var(--primary-color);
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    overflow: auto;    
+    padding: 0px 40px;
+    padding-left: 0px;
+    padding-top: 20px;
+}
+
+.showcase-cover{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.showcase-social-icons{
+    width: 10%;    
+    align-content: center;
+}
+
+.showcase-text{
+    width: 80%;
+}
+
+.social-icons-group{
+    background-color: #e5e5e5;
+    width: 35%;
+    min-width: 50px;
+    height: 300px;
+    align-content: center;
+    padding: 13px 5px;
+    padding-right: 13px;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+}
+
+.social-icon-grid{
+    display: grid;    
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;    
+}
+
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase-text{
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.align-text{
+    text-align: center;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.showcase-primary-text{
+    font-size:38pt;
+    font-weight: 900;
+}
+
+.showcase-secondary-text{
+    font-size:x-large;
+}
+
+.showcase-header-button{
+    padding-top: 20px;
+}
+
+.read-more-button {
+    padding: 20px 65px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 1px; 
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+    background-color: #fff;
+}
+
+.showcase-button{
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Common to more than one section */
+
+.button-white-text{
+    color: #fff;
+}
+
+
+.section-cover{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 100%;  
+}
+
+.section-head{
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+    margin-bottom: 20px;     
+}
+
+.section-head-main-text{
+    font-size:38pt;
+    font-weight: 900;
+    padding-bottom: 0px;
+}
+
+.the-dash{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 5px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.section-head-sub-text {
+    font-size:x-large;
+    padding-top: 50px;
+}
+
+
+
+/* About Me Section */
+
+.about-me-cover{
+    background-color:var(--light-blue);
+    padding-bottom: 100px;
+}
+
+.about-me{
+    height: auto;
+}
+
+.about-me-body{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.about-me-content{
+    flex-basis: 600px;    
+}
+
+.about-me-skills{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    margin-left: 80px;    
+    padding: 0px 20px;
+}
+
+.about-me-body-heading{
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 30px 0px 20px 20px;
+}
+
+.about-me-body-subtext{
+padding: 20px;
+letter-spacing: 0.5px;
+text-align: justify;
+font-size: 13pt;
+}
+
+.contact-button-cover{
+    padding: 20px;
+}
+
+.contact-button{
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px; 
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+    background-color: var(--primary-color);
+    color: var(--my-white);    
+}
+
+.skills-heading{
+    font-size: xx-large;
+    font-weight: 700;
+    padding: 30px 0px 40px 0px;
+}
+
+.skill-button-cover{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+}
+
+.skill-button{
+    font-size: 12pt;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+    word-wrap:break-word;    
+    align-content: center;
+}
+
+.sp2-button{
+    grid-column: span 2;
+}
+
+.about-me-image{
+    width: 100%;
+    height: 50%;
+    margin: 30px 0px;
+}
+
+.programmer-image{
+    width: 100%; 
+}
+
+
+
+/* Projects Section */
+
+.project{
+    height: auto;
+}
+
+.project-cover {    
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;    
+    gap: 50px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .project-body{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+    padding-right: 20px;
+ }
+
+ .project-image-cover{
+    padding: 20px;
+    width: 500px;
+ }
+
+ .project-image{
+    width: 100%;    
+    border-radius: 20px;
+ }
+
+ .project-writeup{
+    background-color: var(--light-blue);
+    padding: 30px;
+    width: 400px;
+    height: 600px;    
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+ }
+
+ .align-project-heading{
+    font-size: xx-large;
+    margin-bottom: 20px;
+ }
+
+ .align-project-subheading{
+    font-size: large;
+    margin-bottom: 40px;
+ }
+
+ .align-project-button{
+    padding: 20px 30px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px; 
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+    background-color: var(--primary-color);
+    color: #fff;
+ }
+
+/* Form Section */
+
+.forms{
+    height: auto;
+    color: #fff;
+}
+
+.form-cover{    
+    background-color: var(--primary-color);
+    margin-top: 150px;
+    margin-bottom: 0px;
+    padding-bottom: 100px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.form-heading{
+    padding-bottom: 0px;
+}
+.form-dash{
+    background-color: #fff;
+}
+
+.form-subtext{
+    padding: 50px 100px;
+}
+
+.form-main-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-item-cover{
+    background-color: var(--light-blue);
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 500px;
+    height: 700px;  
+    border-radius: 20px;    
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+}
+
+.form-main-item::placeholder{
+    color: #8f92a1
+}
+
+.form-main-item{
+    background-color: var(--Deep-blue);
+    padding: 25px 93px;
+    border-width: 0px;
+    color: #fff;
+    font-size: 20pt;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+}
+
+.send-btn{
+    padding: 20px 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1px; 
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.2);/* (Horizontal Offset) (Vertical Offset) (Blur) (Color)*/
+    background-color: var(--primary-color);
+    color: #fff;   
+    margin-top: 75px; 
+}
+
+/* Footer */ 
+
+.footer-section{
+    background-color: var(--Deep-blue);
+    color: #fff;
+    height: auto;
+}
+
+.footer-cover{
+    display: flex;    
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    height: 250x;
+    padding: 50px;
+}
+
+.footer-writeup{
+    flex-basis: 650px;
+}
+
+.footer-icons{
+    flex-basis: 300px;
+}
+
+.footer-align{
+    padding: 20px 50px;
+    height: 100%;
+}
+
+.footer-heading{
+    font-size: 16pt;
+    padding-bottom: 10px;
+    font-weight:700;
+}
+
+.footer-heading-one{
+    padding-bottom: 30px;
+}
+
+.footer-subheading{
+    width: 400px;
+}
+
+.footer-connect-icons{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-top: 20px;    
+}
+
+.copyright-cover{
+    display: flex;
+    padding: 0px 50px 50px 50px ;
+    align-items: center;
+}
+
+.copyright{
+    border-top: 2px solid var(--light-blue);
+    padding-top: 40px;
+}
+
+.copyright-paragraph{
+    font-size: 12pt;
+    text-align: center;
+    padding-bottom: 10px;
+    word-spacing: 0.5px;
+}
+
+
+/* Responsiveness */
+
+/* To remove the scrollbars */
+@media(max-width: 1224px){
+
+    .showcase{
+        height: auto;       
+    }
+
+}
+
+/* Tablets and Under */
+@media(max-width: 768px){ 
+    
+    .navbar{
+        background-color: #002240;
+    }
+
+    .top-side-icon{
+        height: 70%;
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        overflow: auto;
+        padding: 0px 40px;
+    }
+
+    .showcase{
+        height: auto;       
+    }
+    .showcase-text{
+        padding: 80px 0px;
+    }
+
+    .read-more-button {
+        padding: 20px 35px;
+        font-size: 1.1rem;
+        font-weight: 400;
+        letter-spacing: 2px; 
+    }
+    
+    .section-cover{
+        width: auto;
+    }
+
+    /* About Me Section - Responsive */
+
+    .about-me-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-content,
+    .about-me-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .section-head-main-text{
+        font-size: 28pt;
+        font-weight: 900;
+        padding-bottom: 0px;
+    }
+
+    .section-head-sub-text{
+        font-size:large;
+        width: 100%;
+    }
+
+    .section-head{        
+        padding-bottom: 0px;
+    }
+
+    .about-me-body-heading{
+        font-size: 24pt;
+        font-weight: 700;
+        padding: 30px 0px 20px 20px;
+    }
+
+    .about-me-body-subtext{
+        padding: 15px 20px;
+        letter-spacing: 0.5px;
+        text-align: center;
+        font-size: 13pt;
+    }
+        
+    .contact-button-cover{
+        padding-top: 50px;            
+    }
+
+    .contact-button{
+        padding: 20px 15px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .skills-heading{
+        margin-top: 100px;
+        font-size: 24pt;
+        font-weight: 700;
+        padding: 30px 0px 40px 0px;
+    }
+
+        /* Projects - Responsive */ 
+
+    .project-body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+     }
+
+    /* Forms - Responsive */
+
+    .form-heading{
+        padding-top: 100px;
+    }
+
+    .form-subtext{
+        padding: 30px 0px;
+    }
+
+    .form-cover{
+        
+        margin-bottom: 0px;
+        padding-bottom: 150px;
+    }
+
+    .form-item-cover{
+        width: 350px;
+        height: 500px;
+        gap: 35px 
+    }
+    
+    .form-main-item{
+       padding: 15px 46px;
+       font-size:16pt;
+    }
+
+    .send-btn{
+        margin-top: 40px;
+    }
+    
+    /* Footer - Responsive*/
+
+    .footer-cover{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-writeup{
+        flex-basis: auto;
+    }
+
+    .footer-icons{
+        flex-basis: auto;
+    }
+
+    .footer-heading-one{
+        text-align: center;
+    }
+
+    .footer-subheading{
+        text-align: center;
+    }
+
+    .copyright{
+        padding-top: 40px;
+    }
+
+}
+
+
+/* Mobile Devices */
+@media(max-width: 580px){
+    .navbar {
+        background-color: #002240;
+        height: 110px;      
+    }
+
+    .navbar .flex{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .navbar ul{
+        padding: 10px;
+    }    
+      
+}
+
+
+
